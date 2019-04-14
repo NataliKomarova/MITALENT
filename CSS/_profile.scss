@@ -1,0 +1,416 @@
+.first-screen {
+    height: 1080px;
+    position: relative;
+
+    .rectangle-with-bg {
+        width: 481px;
+        height: 811px;
+        right: 0;
+        position: absolute;
+        top: 0;
+        background-image: linear-gradient(225deg, #b4d3d3, #d9e7e7);
+    }
+
+    .main-content {
+        width: 1800px;
+        height: 810px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .slider-meta {
+        width: 480px;
+        height: 100%;
+        position: relative;
+    }
+
+    .person-info {
+        color: $primary-color;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        z-index: 1;
+    }
+
+    .person-name {
+        font-size: 101px;
+        letter-spacing: 2px;
+        color: $primary-color;
+        max-width: 500px;
+        margin: 0;
+
+    }
+
+    .person-job {
+        margin-top: 34px;
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 3.4px;
+    }
+
+    .slider-controls {
+        position: absolute;
+        left: 0;
+        bottom: 88px;
+        width: 100%
+    }
+
+    .slider-pages {
+        position: absolute;
+        font-size: 12px;
+        letter-spacing: 2.4px;
+        left: 62px;
+        bottom: 0;
+        color: $primary-color;
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .slider-page{
+        opacity: 0.7;
+        margin-top: 41px;
+        cursor: pointer;
+        position: relative;
+
+        &.active, &:hover {
+            opacity: 1;
+        }
+
+        &.active:before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 2px;
+            background-color:$primary-color;
+            display: inline-block;
+            left: -62px;
+            top: 50%;
+            margin-top: -1px;
+        }
+    }
+
+    .slider-arrows {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+    }
+
+    .fa-long-arrow-alt-left{
+        margin-right: 50px;
+        &.disabled{
+            opacity: 0.5;
+        }
+    }
+
+    .fa-long-arrow-alt-right{
+        &.disabled{
+            opacity: 0.5;
+        }
+    }
+
+    .slide-content {
+        flex-grow: 1;
+        height: 100%;
+        position: relative;
+        background-color: $photo-color;
+    }
+
+    .white-stick{
+        width: 56px;
+        height: 7px;
+        background-color: #fff;
+        position: absolute;
+        top: 271px;
+        left: 233px;
+    }
+
+    .slide-button {
+        width: 106px;
+        height: 106px;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        color: #777;
+
+        i {
+            position: relative;
+            left: 3px;
+        }
+    }
+
+    .slide-title {
+        width: 480px;
+        height: 90px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        line-height: 90px;
+        text-align: center;
+        color: #87bbbc;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+    }
+}
+
+.second-screen {
+    height: 1188px;
+    padding: 120px;
+    position: relative;
+    box-sizing: border-box;
+
+    .photo-slider-control {
+        width: 649px;
+        height: 948px;
+        background-color: $photo-color;
+        position: relative;
+    }
+
+    .photo-pages {
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .photo-page {
+        width: 6px;
+        height: 6px;
+        opacity: 0.5;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &.active, &:hover {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+            //margin-right: 14px;
+            border-radius: 6px;
+        }
+    }
+
+    .about-person {
+        flex-grow: 1;
+        height: 100%;
+        position: relative;
+    }
+
+    .about-person-controls{
+        width: 437px;
+        height: 9px;
+        position: absolute;
+        left: 195px;
+        top: 91px;
+    }
+
+    .about-person-pages{
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $primary-color;
+        justify-content: space-between;
+    }
+
+    .about-person-page{
+        opacity: 0.7;
+        cursor: pointer;
+        position: relative;
+
+        &.active, &:hover {
+            opacity: 1;
+        }
+
+        &.active:before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 2px;
+            background-color:$primary-color;
+            display: inline-block;
+            left: 50%;
+            top: 25px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .about-person-content{
+        position: relative;
+        width: 477px;
+        left: 193px;
+        top: 220px;
+    }
+
+    .content-name{
+        font-size: 60px;
+        color: $primary-color;
+        margin: 0;
+    }
+
+    .content-intro{
+        width: 407px;
+        height: 56px;
+        font-size: 24px;
+        line-height: 1.5;
+        color: $primary-color;
+        margin: 35px 0;
+    }
+
+    .awards{
+        font-size: 16px;
+        color: $primary-color;
+        margin-bottom: 58px;
+
+        i{
+            margin-right: 20px;
+        }
+    }
+
+    .content-text{
+        height: 350px;
+        font-size: 16px;
+        line-height: 1.88;
+        color: #767679;
+    }
+
+    .social-networks-block {
+        position: absolute;
+        right: 112px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .social-networks{
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .social-network{
+        padding-bottom: 40px;
+    }
+}
+
+.third-screen{
+    height: 1080px;
+    position: relative;
+
+    .left-info-block{
+        width: 961px;
+        height: 1080px;
+        position: relative;
+    }
+
+    .left-info-content{
+        width: 570px;
+        position: absolute;
+        left: 241px;
+        top: 185px;
+    }
+
+    .left-title{
+        max-width: 465px;
+        height: 125px;
+        font-size: 59px;
+        line-height: 1.32;
+        color: $primary-color;
+        margin: 0;
+    }
+
+    .left-stick{
+        width: 140px;
+        height: 2px;
+        background-color: $primary-color;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    .left-article{
+        position: relative;
+        width: 571px;
+        height: 139px;
+        margin-bottom: 50px;
+    }
+
+    .article-photo{
+        width: 200px;
+        height: 139px;
+        background-color: $photo-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        i{
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .article-title{
+        width: 329px;
+        height: 92px;
+        font-size: 24px;
+        line-height: 1.5;
+        color: $primary-color;
+        position: absolute;
+        top: -7px;
+        right: 0;
+    }
+
+    .article-date{
+        width: 105px;
+        height: 14px;
+        font-size: 16px;
+        line-height: 2.5;
+        color: #77777e;
+        position: absolute;
+        bottom: 10px;
+        left: 242px;
+    }
+
+    .left-video{
+        background-color: #b4d3d3;
+    }
+
+    .left-video-title{
+        color: #87bbbc;
+    }
+
+    .more-info{
+        width: 170px;
+        height: 11px;
+        font-size: 14px;
+        line-height: 2.14;
+        letter-spacing: 2.8px;
+        color: #000000;
+    }
+
+    .fa-long-arrow-alt-right{
+        margin-left: 22px;
+    }
+
+    .right-photo{
+        width: 839px;
+        height: 1080px;
+        background-color: $photo-color;
+    }
+}
