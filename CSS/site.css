@@ -420,6 +420,107 @@ header .search-controls {
   margin-right: 66px;
 }
 
+.photo-pages {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.photo-page {
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.photo-page.active, .photo-page:hover {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border-radius: 6px;
+}
+
+footer {
+  height: 230px;
+  position: relative;
+  right: 0;
+  left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .up-block {
+  width: 1920px;
+  height: 117px;
+}
+
+footer .logo {
+  font-size: 28px;
+  position: absolute;
+  top: 49px;
+  left: 61px;
+}
+
+footer .sign-up {
+  width: 365px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px solid #b4d3d3;
+  position: absolute;
+  top: 44px;
+  right: 0;
+  padding: 5px 50px;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 2.8px;
+  color: #1a1a1d;
+}
+
+footer .sign-up i {
+  margin-left: 40px;
+}
+
+footer .down-block {
+  width: 1800px;
+  height: 111px;
+  border-top: 2px solid #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .cooperating-info {
+  width: 458px;
+  height: 14px;
+  font-size: 15px;
+  line-height: 2.67;
+  color: #77777e;
+}
+
+footer .social-networks {
+  width: 184px;
+  height: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .first-screen {
   height: 1080px;
   position: relative;
@@ -605,34 +706,6 @@ header .search-controls {
   height: 948px;
   background-color: #e2e8e8;
   position: relative;
-}
-
-.second-screen .photo-pages {
-  position: absolute;
-  left: 50%;
-  bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.second-screen .photo-page {
-  width: 6px;
-  height: 6px;
-  opacity: 0.5;
-  border-radius: 3px;
-  background-color: #fff;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.second-screen .photo-page.active, .second-screen .photo-page:hover {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  border-radius: 6px;
 }
 
 .second-screen .about-person {
@@ -850,5 +923,92 @@ header .search-controls {
   width: 839px;
   height: 1080px;
   background-color: #e2e8e8;
+}
+
+.forth-screen {
+  height: 1036px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forth-screen .section-header {
+  height: 344px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.forth-screen .section-header-block-left {
+  width: 421px;
+  position: absolute;
+  left: 271px;
+  top: 117px;
+}
+
+.forth-screen .forth-title {
+  font-size: 60px;
+  line-height: 1.32;
+  color: #1a1a1d;
+  margin: 0;
+}
+
+.forth-screen .forth-stick {
+  width: 140px;
+  height: 2px;
+  background-color: #1a1a1d;
+  margin-top: 43px;
+}
+
+.forth-screen .section-header-block-right {
+  width: 567px;
+  position: absolute;
+  right: 253px;
+  top: 117px;
+}
+
+.forth-screen .forth-info {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #767679;
+}
+
+.forth-screen .explore-more {
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 2.8px;
+  color: #000000;
+  margin-top: 42px;
+  text-transform: uppercase;
+}
+
+.forth-screen .explore-more i {
+  margin-left: 22px;
+}
+
+.forth-screen .photo-carousel {
+  width: 1680px;
+  height: 692px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.forth-screen .photo {
+  width: 420px;
+  height: 490px;
+  background-color: #e2e8e8;
+}
+
+.forth-screen .photo-pages {
+  bottom: 120px;
+}
+
+.forth-screen .photo-page {
+  background-color: #b4d3d3;
 }
 /*# sourceMappingURL=site.css.map */
