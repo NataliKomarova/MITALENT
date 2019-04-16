@@ -171,12 +171,10 @@
 
     .photo-slider-control {
         width: 649px;
-        height: 948px;
+        height: 100%;
         background-color: $photo-color;
         position: relative;
     }
-
-    
 
     .about-person {
         flex-grow: 1;
@@ -184,12 +182,15 @@
         position: relative;
     }
 
-    .about-person-controls{
-        width: 437px;
-        height: 9px;
+    .person-content{
+        width: 477px;
         position: absolute;
         left: 195px;
         top: 91px;
+    }
+
+    .about-person-controls{
+        width: 100%;
     }
 
     .about-person-pages{
@@ -227,24 +228,21 @@
 
     .about-person-content{
         position: relative;
-        width: 477px;
-        left: 193px;
-        top: 220px;
+        top: 130px;
     }
 
     .content-name{
         font-size: 60px;
         color: $primary-color;
         margin: 0;
+        margin-bottom: 38px;
     }
 
     .content-intro{
-        width: 407px;
-        height: 56px;
         font-size: 24px;
         line-height: 1.5;
         color: $primary-color;
-        margin: 35px 0;
+        margin-bottom: 31px;
     }
 
     .awards{
@@ -258,7 +256,6 @@
     }
 
     .content-text{
-        height: 350px;
         font-size: 16px;
         line-height: 1.88;
         color: #767679;
@@ -287,8 +284,8 @@
     position: relative;
 
     .left-info-block{
-        width: 961px;
-        height: 1080px;
+        width: 960px;
+        height: 100%;
         position: relative;
     }
 
@@ -301,7 +298,6 @@
 
     .left-title{
         max-width: 465px;
-        height: 125px;
         font-size: 59px;
         line-height: 1.32;
         color: $primary-color;
@@ -318,7 +314,6 @@
 
     .left-article{
         position: relative;
-        width: 571px;
         height: 139px;
         margin-bottom: 50px;
     }
@@ -340,8 +335,7 @@
     }
 
     .article-title{
-        width: 329px;
-        height: 92px;
+        max-width: 329px;
         font-size: 24px;
         line-height: 1.5;
         color: $primary-color;
@@ -351,13 +345,10 @@
     }
 
     .article-date{
-        width: 105px;
-        height: 14px;
         font-size: 16px;
-        line-height: 2.5;
         color: #77777e;
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
         left: 242px;
     }
 
@@ -370,10 +361,7 @@
     }
 
     .more-info{
-        width: 170px;
-        height: 11px;
         font-size: 14px;
-        line-height: 2.14;
         letter-spacing: 2.8px;
         color: #000000;
     }
@@ -383,8 +371,8 @@
     }
 
     .right-photo{
-        width: 839px;
-        height: 1080px;
+        width: 840px;
+        height: 100%;
         background-color: $photo-color;
     }
 }
@@ -394,13 +382,8 @@
     position: relative;
     flex-direction: column;
 
-    .section-header{
-        height: 344px;
-        justify-content: space-between;
-    }
-
     .section-header-block-left{
-        width: 421px;
+        max-width: 421px;
         position: absolute;
         left: 271px;
         top: 117px;
@@ -409,7 +392,6 @@
 
     .forth-title{
         font-size: 60px;
-        line-height: 1.32;
         color: $primary-color;
         margin: 0;
     }
@@ -418,7 +400,7 @@
         width: 140px;
         height: 2px;
         background-color: $primary-color;
-        margin-top: 43px;
+        margin-top: 49px;
     }
 
     .section-header-block-right{
@@ -436,7 +418,6 @@
 
     .explore-more{
         font-size: 14px;
-        line-height: 2.14;
         letter-spacing: 2.8px;
         color: #000000;
         margin-top: 42px;

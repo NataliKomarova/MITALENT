@@ -473,7 +473,6 @@ footer .logo {
 
 footer .sign-up {
   width: 365px;
-  height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-left: 1px solid #b4d3d3;
@@ -506,16 +505,12 @@ footer .down-block {
 }
 
 footer .cooperating-info {
-  width: 458px;
-  height: 14px;
   font-size: 15px;
-  line-height: 2.67;
   color: #77777e;
 }
 
 footer .social-networks {
   width: 184px;
-  height: 16px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -703,7 +698,7 @@ footer .social-networks {
 
 .second-screen .photo-slider-control {
   width: 649px;
-  height: 948px;
+  height: 100%;
   background-color: #e2e8e8;
   position: relative;
 }
@@ -716,12 +711,15 @@ footer .social-networks {
   position: relative;
 }
 
-.second-screen .about-person-controls {
-  width: 437px;
-  height: 9px;
+.second-screen .person-content {
+  width: 477px;
   position: absolute;
   left: 195px;
   top: 91px;
+}
+
+.second-screen .about-person-controls {
+  width: 100%;
 }
 
 .second-screen .about-person-pages {
@@ -762,24 +760,21 @@ footer .social-networks {
 
 .second-screen .about-person-content {
   position: relative;
-  width: 477px;
-  left: 193px;
-  top: 220px;
+  top: 130px;
 }
 
 .second-screen .content-name {
   font-size: 60px;
   color: #1a1a1d;
   margin: 0;
+  margin-bottom: 38px;
 }
 
 .second-screen .content-intro {
-  width: 407px;
-  height: 56px;
   font-size: 24px;
   line-height: 1.5;
   color: #1a1a1d;
-  margin: 35px 0;
+  margin-bottom: 31px;
 }
 
 .second-screen .awards {
@@ -793,7 +788,6 @@ footer .social-networks {
 }
 
 .second-screen .content-text {
-  height: 350px;
   font-size: 16px;
   line-height: 1.88;
   color: #767679;
@@ -823,8 +817,8 @@ footer .social-networks {
 }
 
 .third-screen .left-info-block {
-  width: 961px;
-  height: 1080px;
+  width: 960px;
+  height: 100%;
   position: relative;
 }
 
@@ -837,7 +831,6 @@ footer .social-networks {
 
 .third-screen .left-title {
   max-width: 465px;
-  height: 125px;
   font-size: 59px;
   line-height: 1.32;
   color: #1a1a1d;
@@ -854,7 +847,6 @@ footer .social-networks {
 
 .third-screen .left-article {
   position: relative;
-  width: 571px;
   height: 139px;
   margin-bottom: 50px;
 }
@@ -877,8 +869,7 @@ footer .social-networks {
 }
 
 .third-screen .article-title {
-  width: 329px;
-  height: 92px;
+  max-width: 329px;
   font-size: 24px;
   line-height: 1.5;
   color: #1a1a1d;
@@ -888,13 +879,10 @@ footer .social-networks {
 }
 
 .third-screen .article-date {
-  width: 105px;
-  height: 14px;
   font-size: 16px;
-  line-height: 2.5;
   color: #77777e;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 242px;
 }
 
@@ -907,10 +895,7 @@ footer .social-networks {
 }
 
 .third-screen .more-info {
-  width: 170px;
-  height: 11px;
   font-size: 14px;
-  line-height: 2.14;
   letter-spacing: 2.8px;
   color: #000000;
 }
@@ -920,8 +905,8 @@ footer .social-networks {
 }
 
 .third-screen .right-photo {
-  width: 839px;
-  height: 1080px;
+  width: 840px;
+  height: 100%;
   background-color: #e2e8e8;
 }
 
@@ -934,15 +919,8 @@ footer .social-networks {
           flex-direction: column;
 }
 
-.forth-screen .section-header {
-  height: 344px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .forth-screen .section-header-block-left {
-  width: 421px;
+  max-width: 421px;
   position: absolute;
   left: 271px;
   top: 117px;
@@ -950,7 +928,6 @@ footer .social-networks {
 
 .forth-screen .forth-title {
   font-size: 60px;
-  line-height: 1.32;
   color: #1a1a1d;
   margin: 0;
 }
@@ -959,7 +936,7 @@ footer .social-networks {
   width: 140px;
   height: 2px;
   background-color: #1a1a1d;
-  margin-top: 43px;
+  margin-top: 49px;
 }
 
 .forth-screen .section-header-block-right {
@@ -977,7 +954,6 @@ footer .social-networks {
 
 .forth-screen .explore-more {
   font-size: 14px;
-  line-height: 2.14;
   letter-spacing: 2.8px;
   color: #000000;
   margin-top: 42px;
