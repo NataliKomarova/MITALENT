@@ -448,6 +448,10 @@ header .search-controls {
   border-radius: 6px;
 }
 
+.photo-page:last-child {
+  margin: 0;
+}
+
 footer {
   height: 230px;
   position: relative;
@@ -696,6 +700,11 @@ footer .social-networks {
           box-sizing: border-box;
 }
 
+.second-screen .photo-slider-control-block {
+  width: 50%;
+  height: 100%;
+}
+
 .second-screen .photo-slider-control {
   width: 649px;
   height: 100%;
@@ -704,22 +713,15 @@ footer .social-networks {
 }
 
 .second-screen .about-person {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   height: 100%;
-  position: relative;
 }
 
 .second-screen .person-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 477px;
-  position: absolute;
-  left: 195px;
-  top: 91px;
-}
-
-.second-screen .about-person-controls {
-  width: 100%;
+  margin-top: 91px;
 }
 
 .second-screen .about-person-pages {
@@ -805,19 +807,31 @@ footer .social-networks {
   padding-left: 0;
   list-style: none;
   margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .second-screen .social-network {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  text-decoration: unset;
+  color: #1a1a1d;
+}
+
+.second-screen .social-network:hover {
+  color: rgba(26, 26, 29, 0.5);
 }
 
 .third-screen {
   height: 1080px;
+  padding: 120px;
+  padding-top: 0px;
   position: relative;
 }
 
 .third-screen .left-info-block {
-  width: 960px;
+  width: 50%;
   height: 100%;
   position: relative;
 }
@@ -825,8 +839,10 @@ footer .social-networks {
 .third-screen .left-info-content {
   width: 570px;
   position: absolute;
-  left: 241px;
-  top: 185px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .third-screen .left-title {
@@ -846,21 +862,21 @@ footer .social-networks {
 }
 
 .third-screen .left-article {
-  position: relative;
   height: 139px;
+  width: 100%;
   margin-bottom: 50px;
 }
 
-.third-screen .article-photo {
-  width: 200px;
-  height: 139px;
-  background-color: #e2e8e8;
-  position: absolute;
-  top: 0;
-  left: 0;
+.third-screen .left-article:hover .article-title {
+  color: #87bbbc;
 }
 
-.third-screen .article-photo i {
+.third-screen .left-article:hover .article-photo {
+  background-color: #b4d3d3;
+}
+
+.third-screen .left-article:hover .article-photo i {
+  display: inline-block;
   position: relative;
   left: 50%;
   top: 50%;
@@ -868,36 +884,42 @@ footer .social-networks {
           transform: translate(-50%, -50%);
 }
 
+.third-screen .title-date-block {
+  height: 100%;
+}
+
+.third-screen .article-photo {
+  width: 200px;
+  height: 139px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #e2e8e8;
+  margin-right: 42px;
+}
+
+.third-screen .article-photo i {
+  display: none;
+}
+
 .third-screen .article-title {
-  max-width: 329px;
   font-size: 24px;
   line-height: 1.5;
   color: #1a1a1d;
-  position: absolute;
-  top: -7px;
-  right: 0;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .third-screen .article-date {
   font-size: 16px;
   color: #77777e;
-  position: absolute;
-  bottom: 0;
-  left: 242px;
-}
-
-.third-screen .left-video {
-  background-color: #b4d3d3;
-}
-
-.third-screen .left-video-title {
-  color: #87bbbc;
 }
 
 .third-screen .more-info {
   font-size: 14px;
   letter-spacing: 2.8px;
   color: #000000;
+  margin-top: 63px;
+  text-transform: uppercase;
 }
 
 .third-screen .fa-long-arrow-alt-right {
@@ -905,7 +927,9 @@ footer .social-networks {
 }
 
 .third-screen .right-photo {
-  width: 840px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 100%;
   background-color: #e2e8e8;
 }
