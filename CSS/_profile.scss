@@ -186,9 +186,8 @@
     }
 
     .person-content{
-        flex-grow: 1;
         width: 477px;
-        margin-top: 91px;
+        margin-top: 90px;
     }
 
 
@@ -282,6 +281,10 @@
         &:hover{
             color: rgba(26, 26, 29, 0.5);
             }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -377,9 +380,12 @@
     .more-info{
         font-size: 14px;
         letter-spacing: 2.8px;
-        color: #000000;
         margin-top: 63px;
         text-transform: uppercase;
+        a {
+            text-decoration: unset;
+            color: #000000;
+        }
     }
 
     .fa-long-arrow-alt-right{
@@ -394,16 +400,15 @@
 }
 
 .forth-screen{
-    height: 1036px;
-    position: relative;
-    flex-direction: column;
+    padding: 0px 120px;
+
+    .section-header{
+        width: 100%;
+        justify-content: space-around;
+    }
 
     .section-header-block-left{
         max-width: 421px;
-        position: absolute;
-        left: 271px;
-        top: 117px;
-
     }
 
     .forth-title{
@@ -420,10 +425,7 @@
     }
 
     .section-header-block-right{
-        width: 567px;
-        position: absolute;
-        right: 253px;
-        top: 117px;
+        max-width: 567px;
     }
 
     .forth-info{
@@ -439,28 +441,33 @@
         margin-top: 42px;
         text-transform: uppercase;
 
+        a {
+            text-decoration: unset;
+            color: #000000;
+        }
+
         i{
             margin-left: 22px;
         }
     }
 
     .photo-carousel{
-        width: 1680px;
-        height: 692px;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
+        width: 100%;
+        position: relative;
+        margin-top: 130px;
     }
 
     .photo{
-        width: 420px;
+        flex-grow: 1;
         height: 490px;
         background-color: $photo-color;
     }
 
     .photo-pages{
-        bottom: 120px;
+        position: absolute;
+        left: 50%;
+        bottom: -70px;
+        transform: translateX(-50%);
     }
 
     .photo-page{
