@@ -73,17 +73,20 @@ header{
         width: 12px;
         height: 12px;
         opacity: 1;
-        //margin-right: 14px;
+        margin-right: 14px;
         border-radius: 6px;
     }
 }
 
 .photo-page:last-child{
     margin: 0;
+
+    &:hover {
+        margin-left: -6px;
+    }
 }
 
 footer{
-    margin-top: 200px;
     padding: 0px 60px;
 
     .up-block{
@@ -109,6 +112,11 @@ footer{
             margin-left: 40px;;
         }
 
+        a{
+            text-decoration: unset;
+            color: #1a1a1d;
+        }
+
     }
 
     .down-block{
@@ -126,6 +134,11 @@ footer{
     .social-networks{
         width: 184px;
         justify-content: space-between;
+    }
+
+    .social-network{
+        text-decoration: unset;
+        color: #1a1a1d;
     }
 
 }
